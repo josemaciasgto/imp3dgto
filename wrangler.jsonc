@@ -1,0 +1,9 @@
+// Configuración de Cloudflare: publica la carpeta sitio/ como sitio estático.
+{
+  "name": "impresiones3dgto",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./sitio",
+    "not_found_handling": "404-page"
+  }
+}

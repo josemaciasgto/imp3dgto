@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Dragon Ball · Impresiones 3D GTO</title>
+<meta property="og:title" content="Dragon Ball · Impresiones 3D GTO">
+<meta property="og:url" content="https://impresiones3dgto.netlify.app/dragonball/">
+<meta property="og:description" content="Figuras de Dragon Ball impresas en 3D. Pide la tuya por WhatsApp.">
+<meta property="og:image" content="https://impresiones3dgto.netlify.app/img/dragonball.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f13;--panel:#161a21;--line:#262c36;--text:#e9ecf1;--muted:#8d96a5;--accent:#ff7a00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 24px;text-align:center;background:radial-gradient(ellipse at top,#1f2530 0%,var(--bg) 70%);border-bottom:1px solid var(--line)}
+.brand{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,8vw,76px);margin:6px 0 4px;letter-spacing:.04em;font-weight:400}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:15px;margin:0 auto;max-width:620px;line-height:1.5}
+.contact{display:inline-block;margin-top:16px;padding:9px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.bar{position:sticky;top:0;z-index:5;background:rgba(13,15,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+input{flex:1 1 180px;min-width:160px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-family:inherit;font-size:14px}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;letter-spacing:.04em;margin:32px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h2 small{font-family:Inter;font-size:13px;color:var(--muted);letter-spacing:0;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:zoom-in;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:#3a4250}
+.ph{aspect-ratio:1/1;background:#0a0b0e;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 12px}
+.code{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.name{font-size:14px;font-weight:500;margin-top:3px;line-height:1.3}
+.empty{color:var(--muted);text-align:center;padding:40px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--line);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:80vh;border-radius:8px}
+.lb p{margin:14px 0 0;font-size:16px}
+@media (max-width:600px){
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar-in::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto}
+input{flex:0 0 170px}
+h2{font-size:26px}
+.name{font-size:13px}
+header{padding:28px 16px 20px}
+}
+.contact.alt{background:var(--accent);color:#111;margin-left:8px}
+@media (max-width:600px){.contact.alt{margin:10px 0 0;display:inline-block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Impresiones 3D GTO</div>
+  <h1>Dragon <span>Ball</span></h1>
+  <p class="sub">Goku, Vegeta, Freezer, Cell, Broly y toda la saga de Dragon Ball, Z, GT y Super en figuras, bustos, dioramas y chibis que podemos imprimir en 3D. Toca una imagen para verla grande y pídenos el modelo por su código.</p>
+  <a class="contact alt" href="../">← Todos los catálogos</a> <a class="contact" href="https://wa.me/524731399799">WhatsApp 473 139 9799</a> <a class="contact alt" href="../vintage/">Caricaturas Vintage →</a> <a class="contact alt" href="../marvel/">Catálogo Marvel →</a> <a class="contact alt" href="../dc/">Catálogo DC →</a> <a class="contact alt" href="../batman/">Catálogo Batman →</a>
+</header>
+<div class="bar"><div class="bar-in" id="chips"><input id="q" type="search" placeholder="Buscar (ej. Goku, Vegeta, Freezer)..."></div></div>
+<main id="list"></main>
+<footer>118 modelos · Las imágenes son de referencia del diseño digital; el acabado final depende del material, tamaño y pintura que elijas.<br>Cotiza tu figura por WhatsApp: 473 139 9799</footer>
+<div class="lb" id="lb"><img id="lbi" alt=""><p id="lbt"></p></div>
+<script>
+const DATA=[{"n": "Goku SSJ", "c": "Goku", "code": "DB-001", "img": "img/DB-001.jpg"}, {"n": "Goku SSJ (Absolute 2)", "c": "Goku", "code": "DB-002", "img": "img/DB-002.jpg"}, {"n": "Goku SSJ Absolute", "c": "Goku", "code": "DB-003", "img": "img/DB-003.jpg"}, {"n": "Goku SSJ Namek busto", "c": "Goku", "code": "DB-004", "img": "img/DB-004.jpg"}, {"n": "Goku SSJ2", "c": "Goku", "code": "DB-005", "img": "img/DB-005.jpg"}, {"n": "Goku SSJ3", "c": "Goku", "code": "DB-006", "img": "img/DB-006.jpg"}, {"n": "Goku SSJ3 HQ", "c": "Goku", "code": "DB-007", "img": "img/DB-007.jpg"}, {"n": "Goku SSJ4", "c": "Goku", "code": "DB-008", "img": "img/DB-008.jpg"}, {"n": "Goku SSJ4 (2 colores)", "c": "Goku", "code": "DB-009", "img": "img/DB-009.jpg"}, {"n": "Goku SSJ4 300 mm", "c": "Goku", "code": "DB-010", "img": "img/DB-010.jpg"}, {"n": "Goku SSJ4 con Shenlong", "c": "Goku", "code": "DB-011", "img": "img/DB-011.jpg"}, {"n": "Goku SSJ5", "c": "Goku", "code": "DB-012", "img": "img/DB-012.jpg"}, {"n": "Goku clásico", "c": "Goku", "code": "DB-013", "img": "img/DB-013.jpg"}, {"n": "Goku con báculo", "c": "Goku", "code": "DB-014", "img": "img/DB-014.jpg"}, {"n": "Goku con dragón", "c": "Goku", "code": "DB-015", "img": "img/DB-015.jpg"}, {"n": "Goku en Namek diorama", "c": "Goku", "code": "DB-016", "img": "img/DB-016.jpg"}, {"n": "Goku en nube voladora", "c": "Goku", "code": "DB-017", "img": "img/DB-017.jpg"}, {"n": "Goku figura completa", "c": "Goku", "code": "DB-018", "img": "img/DB-018.jpg"}, {"n": "Goku niño en esferas", "c": "Goku", "code": "DB-019", "img": "img/DB-019.jpg"}, {"n": "Goku ropa rota", "c": "Goku", "code": "DB-020", "img": "img/DB-020.jpg"}, {"n": "Goku shogun", "c": "Goku", "code": "DB-021", "img": "img/DB-021.jpg"}, {"n": "Goku todas las formas", "c": "Goku", "code": "DB-022", "img": "img/DB-022.jpg"}, {"n": "Bardock", "c": "Vegeta y saiyajines", "code": "DB-023", "img": "img/DB-023.jpg"}, {"n": "Bardock Ozaru", "c": "Vegeta y saiyajines", "code": "DB-024", "img": "img/DB-024.jpg"}, {"n": "Bardock en cápsula", "c": "Vegeta y saiyajines", "code": "DB-025", "img": "img/DB-025.jpg"}, {"n": "Gogeta", "c": "Vegeta y saiyajines", "code": "DB-026", "img": "img/DB-026.jpg"}, {"n": "Gogeta SSJ4", "c": "Vegeta y saiyajines", "code": "DB-027", "img": "img/DB-027.jpg"}, {"n": "Gogeta chica", "c": "Vegeta y saiyajines", "code": "DB-028", "img": "img/DB-028.jpg"}, {"n": "Majin Vegeta (Nacho Busto)", "c": "Vegeta y saiyajines", "code": "DB-029", "img": "img/DB-029.jpg"}, {"n": "Majin Vegeta busto", "c": "Vegeta y saiyajines", "code": "DB-030", "img": "img/DB-030.jpg"}, {"n": "Raditz", "c": "Vegeta y saiyajines", "code": "DB-031", "img": "img/DB-031.jpg"}, {"n": "Vegeta Gran Simio", "c": "Vegeta y saiyajines", "code": "DB-032", "img": "img/DB-032.jpg"}, {"n": "Vegeta en cristal", "c": "Vegeta y saiyajines", "code": "DB-033", "img": "img/DB-033.jpg"}, {"n": "Vegetto samurái", "c": "Vegeta y saiyajines", "code": "DB-034", "img": "img/DB-034.jpg"}, {"n": "Gohan SSJ2 (2 colores)", "c": "Gohan, Trunks y familia", "code": "DB-035", "img": "img/DB-035.jpg"}, {"n": "Gohan busto", "c": "Gohan, Trunks y familia", "code": "DB-036", "img": "img/DB-036.jpg"}, {"n": "Gohan místico con Shenlong", "c": "Gohan, Trunks y familia", "code": "DB-037", "img": "img/DB-037.jpg"}, {"n": "Gohan transformaciones", "c": "Gohan, Trunks y familia", "code": "DB-038", "img": "img/DB-038.jpg"}, {"n": "Goku niño con Gohan", "c": "Gohan, Trunks y familia", "code": "DB-039", "img": "img/DB-039.jpg"}, {"n": "Goten vs Trunks", "c": "Gohan, Trunks y familia", "code": "DB-040", "img": "img/DB-040.jpg"}, {"n": "Gotenks", "c": "Gohan, Trunks y familia", "code": "DB-041", "img": "img/DB-041.jpg"}, {"n": "Trunks Final Flash", "c": "Gohan, Trunks y familia", "code": "DB-042", "img": "img/DB-042.jpg"}, {"n": "Trunks SSJ", "c": "Gohan, Trunks y familia", "code": "DB-043", "img": "img/DB-043.jpg"}, {"n": "Trunks con espada", "c": "Gohan, Trunks y familia", "code": "DB-044", "img": "img/DB-044.jpg"}, {"n": "Trunks del futuro (2 versiones)", "c": "Gohan, Trunks y familia", "code": "DB-045", "img": "img/DB-045.jpg"}, {"n": "Broly", "c": "Villanos", "code": "DB-046", "img": "img/DB-046.jpg"}, {"n": "Broly FighterZ", "c": "Villanos", "code": "DB-047", "img": "img/DB-047.jpg"}, {"n": "Broly diorama", "c": "Villanos", "code": "DB-048", "img": "img/DB-048.jpg"}, {"n": "Broly full power", "c": "Villanos", "code": "DB-049", "img": "img/DB-049.jpg"}, {"n": "Cell", "c": "Villanos", "code": "DB-050", "img": "img/DB-050.jpg"}, {"n": "Cell Jr", "c": "Villanos", "code": "DB-051", "img": "img/DB-051.jpg"}, {"n": "Freezer forma final", "c": "Villanos", "code": "DB-052", "img": "img/DB-052.jpg"}, {"n": "Freezer forma final 2", "c": "Villanos", "code": "DB-053", "img": "img/DB-053.jpg"}, {"n": "Freezer forma final musculoso", "c": "Villanos", "code": "DB-054", "img": "img/DB-054.jpg"}, {"n": "Freezer primera forma busto", "c": "Villanos", "code": "DB-055", "img": "img/DB-055.jpg"}, {"n": "Freezer segunda forma", "c": "Villanos", "code": "DB-056", "img": "img/DB-056.jpg"}, {"n": "Fuerzas Especiales Ginyu", "c": "Villanos", "code": "DB-057", "img": "img/DB-057.jpg"}, {"n": "Majin Buu (4 vistas)", "c": "Villanos", "code": "DB-058", "img": "img/DB-058.jpg"}, {"n": "Super Buu", "c": "Villanos", "code": "DB-059", "img": "img/DB-059.jpg"}, {"n": "Super Buu (Gambody)", "c": "Villanos", "code": "DB-060", "img": "img/DB-060.jpg"}, {"n": "Bills busto (3 vistas)", "c": "Dragon Ball Super", "code": "DB-061", "img": "img/DB-061.jpg"}, {"n": "Bills diorama", "c": "Dragon Ball Super", "code": "DB-062", "img": "img/DB-062.jpg"}, {"n": "Black Goku", "c": "Dragon Ball Super", "code": "DB-063", "img": "img/DB-063.jpg"}, {"n": "Gogeta Blue", "c": "Dragon Ball Super", "code": "DB-064", "img": "img/DB-064.jpg"}, {"n": "Goku Ultra Instinto", "c": "Dragon Ball Super", "code": "DB-065", "img": "img/DB-065.jpg"}, {"n": "Jiren", "c": "Dragon Ball Super", "code": "DB-066", "img": "img/DB-066.jpg"}, {"n": "Jiren (Gambody)", "c": "Dragon Ball Super", "code": "DB-067", "img": "img/DB-067.jpg"}, {"n": "Jiren (fan art)", "c": "Dragon Ball Super", "code": "DB-068", "img": "img/DB-068.jpg"}, {"n": "Kid Jiren", "c": "Dragon Ball Super", "code": "DB-069", "img": "img/DB-069.jpg"}, {"n": "Toppo busto", "c": "Dragon Ball Super", "code": "DB-070", "img": "img/DB-070.jpg"}, {"n": "Toppo busto destructor", "c": "Dragon Ball Super", "code": "DB-071", "img": "img/DB-071.jpg"}, {"n": "Vegeta Ultra Ego (3 vistas)", "c": "Dragon Ball Super", "code": "DB-072", "img": "img/DB-072.jpg"}, {"n": "Vegeta Ultra Ego (Kiba)", "c": "Dragon Ball Super", "code": "DB-073", "img": "img/DB-073.jpg"}, {"n": "Vegeta Ultra Ego (Rafael)", "c": "Dragon Ball Super", "code": "DB-074", "img": "img/DB-074.jpg"}, {"n": "Androide 16 busto", "c": "Personajes y aliados", "code": "DB-075", "img": "img/DB-075.jpg"}, {"n": "Androide 18", "c": "Personajes y aliados", "code": "DB-076", "img": "img/DB-076.jpg"}, {"n": "Androide 18 (210 mm)", "c": "Personajes y aliados", "code": "DB-077", "img": "img/DB-077.jpg"}, {"n": "Androide 18 con chamarra", "c": "Personajes y aliados", "code": "DB-078", "img": "img/DB-078.jpg"}, {"n": "Bulma y Roshi", "c": "Personajes y aliados", "code": "DB-079", "img": "img/DB-079.jpg"}, {"n": "Dragón de Namek (Porunga)", "c": "Personajes y aliados", "code": "DB-080", "img": "img/DB-080.jpg"}, {"n": "Maestro Roshi", "c": "Personajes y aliados", "code": "DB-081", "img": "img/DB-081.jpg"}, {"n": "Maestro Roshi (4 vistas)", "c": "Personajes y aliados", "code": "DB-082", "img": "img/DB-082.jpg"}, {"n": "Maestro Roshi y Krilin", "c": "Personajes y aliados", "code": "DB-083", "img": "img/DB-083.jpg"}, {"n": "Piccolo", "c": "Personajes y aliados", "code": "DB-084", "img": "img/DB-084.jpg"}, {"n": "Piccolo con capa", "c": "Personajes y aliados", "code": "DB-085", "img": "img/DB-085.jpg"}, {"n": "Shenlong", "c": "Personajes y aliados", "code": "DB-086", "img": "img/DB-086.jpg"}, {"n": "Shenlong y Goku niño", "c": "Personajes y aliados", "code": "DB-087", "img": "img/DB-087.jpg"}, {"n": "Shu (Pilaf)", "c": "Personajes y aliados", "code": "DB-088", "img": "img/DB-088.jpg"}, {"n": "Tao Pai Pai", "c": "Personajes y aliados", "code": "DB-089", "img": "img/DB-089.jpg"}, {"n": "Tapion", "c": "Personajes y aliados", "code": "DB-090", "img": "img/DB-090.jpg"}, {"n": "Yamcha", "c": "Personajes y aliados", "code": "DB-091", "img": "img/DB-091.jpg"}, {"n": "Broly vs Goku", "c": "Dioramas y combates", "code": "DB-092", "img": "img/DB-092.jpg"}, {"n": "Cooler vs Goku", "c": "Dioramas y combates", "code": "DB-093", "img": "img/DB-093.jpg"}, {"n": "Diorama Bardock y Gine", "c": "Dioramas y combates", "code": "DB-094", "img": "img/DB-094.jpg"}, {"n": "Diorama Dragon Ball", "c": "Dioramas y combates", "code": "DB-095", "img": "img/DB-095.jpg"}, {"n": "Dr. Gero vs Androide 17", "c": "Dioramas y combates", "code": "DB-096", "img": "img/DB-096.jpg"}, {"n": "Gohan vs Buu", "c": "Dioramas y combates", "code": "DB-097", "img": "img/DB-097.jpg"}, {"n": "Goku transformación Ozaru", "c": "Dioramas y combates", "code": "DB-098", "img": "img/DB-098.jpg"}, {"n": "Goku vs Freezer", "c": "Dioramas y combates", "code": "DB-099", "img": "img/DB-099.jpg"}, {"n": "Goku vs Janemba", "c": "Dioramas y combates", "code": "DB-100", "img": "img/DB-100.jpg"}, {"n": "Goku y Gohan Kamehameha", "c": "Dioramas y combates", "code": "DB-101", "img": "img/DB-101.jpg"}, {"n": "Gotenks vs Super Buu", "c": "Dioramas y combates", "code": "DB-102", "img": "img/DB-102.jpg"}, {"n": "Jiren vs Goku y Freezer", "c": "Dioramas y combates", "code": "DB-103", "img": "img/DB-103.jpg"}, {"n": "Mecha Freezer vs Trunks", "c": "Dioramas y combates", "code": "DB-104", "img": "img/DB-104.jpg"}, {"n": "Vegeta vs Buu", "c": "Dioramas y combates", "code": "DB-105", "img": "img/DB-105.jpg"}, {"n": "Calavera Majin Buu", "c": "Chibi, bustos y extras", "code": "DB-106", "img": "img/DB-106.jpg"}, {"n": "Capsule Corp", "c": "Chibi, bustos y extras", "code": "DB-107", "img": "img/DB-107.jpg"}, {"n": "Cortadores de galletas DBZ", "c": "Chibi, bustos y extras", "code": "DB-108", "img": "img/DB-108.jpg"}, {"n": "Freezer chibi", "c": "Chibi, bustos y extras", "code": "DB-109", "img": "img/DB-109.jpg"}, {"n": "Lámpara Goku", "c": "Chibi, bustos y extras", "code": "DB-110", "img": "img/DB-110.jpg"}, {"n": "Majin Buu chibi", "c": "Chibi, bustos y extras", "code": "DB-111", "img": "img/DB-111.jpg"}, {"n": "Mini Freezer", "c": "Chibi, bustos y extras", "code": "DB-112", "img": "img/DB-112.jpg"}, {"n": "Pack de miniaturas DBZ", "c": "Chibi, bustos y extras", "code": "DB-113", "img": "img/DB-113.jpg"}, {"n": "Vasos Goku y Krilin", "c": "Chibi, bustos y extras", "code": "DB-114", "img": "img/DB-114.jpg"}, {"n": "Vegeta \"It's over 9000\" busto", "c": "Chibi, bustos y extras", "code": "DB-115", "img": "img/DB-115.jpg"}, {"n": "Vegeta bustos", "c": "Chibi, bustos y extras", "code": "DB-116", "img": "img/DB-116.jpg"}, {"n": "Vegeta chibi en la nube", "c": "Chibi, bustos y extras", "code": "DB-117", "img": "img/DB-117.jpg"}, {"n": "Vegeta gym", "c": "Chibi, bustos y extras", "code": "DB-118", "img": "img/DB-118.jpg"}], CATS=["Goku", "Vegeta y saiyajines", "Gohan, Trunks y familia", "Villanos", "Dragon Ball Super", "Personajes y aliados", "Dioramas y combates", "Chibi, bustos y extras"];
+let cat='Todos', q='';
+const chips=document.getElementById('chips'), qi=document.getElementById('q');
+['Todos',...CATS].forEach(c=>{const b=document.createElement('button');b.className='chip'+(c==='Todos'?' on':'');b.textContent=c;b.onclick=()=>{cat=c;[...chips.querySelectorAll('.chip')].forEach(x=>x.classList.toggle('on',x===b));render()};chips.insertBefore(b,qi)});
+qi.oninput=e=>{q=e.target.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');render()};
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function render(){
+  const L=document.getElementById('list');L.innerHTML='';let any=false;
+  CATS.forEach(c=>{
+    if(cat!=='Todos'&&cat!==c)return;
+    const its=DATA.filter(d=>d.c===c&&(!q||norm(d.n+' '+d.code+' '+d.c).includes(q)));
+    if(!its.length)return;any=true;
+    const h=document.createElement('h2');h.innerHTML=c+'<small>'+its.length+'</small>';L.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    its.forEach(d=>{const el=document.createElement('div');el.className='card';
+      el.innerHTML='<div class="ph"><img loading="lazy" alt=""></div><div class="meta"><div class="code"></div><div class="name"></div></div>';
+      el.querySelector('img').src=d.img;el.querySelector('img').alt=d.n;el.querySelector('.code').textContent=d.code;el.querySelector('.name').textContent=d.n;
+      el.onclick=()=>{document.getElementById('lbi').src=d.img;document.getElementById('lbt').textContent=d.code+' · '+d.n;document.getElementById('lb').classList.add('on')};
+      g.appendChild(el)});
+    L.appendChild(g)});
+  if(!any)L.innerHTML='<p class="empty">No encontramos ese modelo. Escríbenos y lo buscamos.</p>';
+}
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+render();
+</script>
+</body>
+</html>

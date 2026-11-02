@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Caricaturas Vintage · Impresiones 3D GTO</title>
+<meta property="og:title" content="Caricaturas Vintage · Impresiones 3D GTO">
+<meta property="og:url" content="https://impresiones3dgto.netlify.app/vintage/">
+<meta property="og:description" content="Figuras de las caricaturas clásicas impresas en 3D. Pide la tuya por WhatsApp.">
+<meta property="og:image" content="https://impresiones3dgto.netlify.app/img/vintage.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f13;--panel:#161a21;--line:#262c36;--text:#e9ecf1;--muted:#8d96a5;--accent:#ff9f1c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 24px;text-align:center;background:radial-gradient(ellipse at top,#1f2530 0%,var(--bg) 70%);border-bottom:1px solid var(--line)}
+.brand{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,8vw,76px);margin:6px 0 4px;letter-spacing:.04em;font-weight:400}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:15px;margin:0 auto;max-width:620px;line-height:1.5}
+.contact{display:inline-block;margin-top:16px;padding:9px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.bar{position:sticky;top:0;z-index:5;background:rgba(13,15,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+input{flex:1 1 180px;min-width:160px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-family:inherit;font-size:14px}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;letter-spacing:.04em;margin:32px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h2 small{font-family:Inter;font-size:13px;color:var(--muted);letter-spacing:0;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:zoom-in;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:#3a4250}
+.ph{aspect-ratio:1/1;background:#0a0b0e;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 12px}
+.code{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.name{font-size:14px;font-weight:500;margin-top:3px;line-height:1.3}
+.empty{color:var(--muted);text-align:center;padding:40px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--line);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:80vh;border-radius:8px}
+.lb p{margin:14px 0 0;font-size:16px}
+@media (max-width:600px){
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar-in::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto}
+input{flex:0 0 170px}
+h2{font-size:26px}
+.name{font-size:13px}
+header{padding:28px 16px 20px}
+}
+.contact.alt{background:var(--accent);color:#111;margin-left:8px}
+@media (max-width:600px){.contact.alt{margin:10px 0 0;display:inline-block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Impresiones 3D GTO</div>
+  <h1>Caricaturas <span>Vintage</span></h1>
+  <p class="sub">Las caricaturas de siempre: Looney Tunes, Hanna-Barbera, He-Man, Thundercats, Tortugas Ninja, Transformers y los clásicos de los 90 que podemos imprimir en 3D. Toca una imagen para verla grande y pídenos el modelo por su código.</p>
+  <a class="contact alt" href="../">← Todos los catálogos</a> <a class="contact" href="https://wa.me/524731399799">WhatsApp 473 139 9799</a> <a class="contact alt" href="../dragonball/">Dragon Ball →</a> <a class="contact alt" href="../marvel/">Catálogo Marvel →</a> <a class="contact alt" href="../dc/">Catálogo DC →</a> <a class="contact alt" href="../batman/">Catálogo Batman →</a>
+</header>
+<div class="bar"><div class="bar-in" id="chips"><input id="q" type="search" placeholder="Buscar (ej. Popeye, He-Man, Scooby)..."></div></div>
+<main id="list"></main>
+<footer>77 modelos · Las imágenes son de referencia del diseño digital; el acabado final depende del material, tamaño y pintura que elijas.<br>Cotiza tu figura por WhatsApp: 473 139 9799</footer>
+<div class="lb" id="lb"><img id="lbi" alt=""><p id="lbt"></p></div>
+<script>
+const DATA=[{"n": "Bugs Bunny y Elmer", "c": "Looney Tunes", "code": "VIN-001", "img": "img/VIN-001.jpg"}, {"n": "Duck Dodgers y Marvin", "c": "Looney Tunes", "code": "VIN-002", "img": "img/VIN-002.jpg"}, {"n": "Elmer Gruñón", "c": "Looney Tunes", "code": "VIN-003", "img": "img/VIN-003.jpg"}, {"n": "Gallo Claudio", "c": "Looney Tunes", "code": "VIN-004", "img": "img/VIN-004.jpg"}, {"n": "Gossamer", "c": "Looney Tunes", "code": "VIN-005", "img": "img/VIN-005.jpg"}, {"n": "Marvin el Marciano", "c": "Looney Tunes", "code": "VIN-006", "img": "img/VIN-006.jpg"}, {"n": "Piolín", "c": "Looney Tunes", "code": "VIN-007", "img": "img/VIN-007.jpg"}, {"n": "Rocky (Looney Tunes)", "c": "Looney Tunes", "code": "VIN-008", "img": "img/VIN-008.jpg"}, {"n": "Silvestre", "c": "Looney Tunes", "code": "VIN-009", "img": "img/VIN-009.jpg"}, {"n": "Taz busto", "c": "Looney Tunes", "code": "VIN-010", "img": "img/VIN-010.jpg"}, {"n": "Taz y Silvestre (logo Looney)", "c": "Looney Tunes", "code": "VIN-011", "img": "img/VIN-011.jpg"}, {"n": "Ajedrez Scooby-Doo", "c": "Hanna-Barbera y clásicos", "code": "VIN-012", "img": "img/VIN-012.jpg"}, {"n": "Astérix y Obélix", "c": "Hanna-Barbera y clásicos", "code": "VIN-013", "img": "img/VIN-013.jpg"}, {"n": "Autos Locos", "c": "Hanna-Barbera y clásicos", "code": "VIN-014", "img": "img/VIN-014.jpg"}, {"n": "Daphne con Scooby", "c": "Hanna-Barbera y clásicos", "code": "VIN-015", "img": "img/VIN-015.jpg"}, {"n": "Don Gato y su pandilla", "c": "Hanna-Barbera y clásicos", "code": "VIN-016", "img": "img/VIN-016.jpg"}, {"n": "Inspector Gadget", "c": "Hanna-Barbera y clásicos", "code": "VIN-017", "img": "img/VIN-017.jpg"}, {"n": "Lucky Luke", "c": "Hanna-Barbera y clásicos", "code": "VIN-018", "img": "img/VIN-018.jpg"}, {"n": "Olivia y Popeye", "c": "Hanna-Barbera y clásicos", "code": "VIN-019", "img": "img/VIN-019.jpg"}, {"n": "Oso Yogui", "c": "Hanna-Barbera y clásicos", "code": "VIN-020", "img": "img/VIN-020.jpg"}, {"n": "Panoramix (Astérix)", "c": "Hanna-Barbera y clásicos", "code": "VIN-021", "img": "img/VIN-021.jpg"}, {"n": "Pitufos y aldea", "c": "Hanna-Barbera y clásicos", "code": "VIN-022", "img": "img/VIN-022.jpg"}, {"n": "Popeye", "c": "Hanna-Barbera y clásicos", "code": "VIN-023", "img": "img/VIN-023.jpg"}, {"n": "Popeye con espinacas", "c": "Hanna-Barbera y clásicos", "code": "VIN-024", "img": "img/VIN-024.jpg"}, {"n": "Pájaro Loco a caballo", "c": "Hanna-Barbera y clásicos", "code": "VIN-025", "img": "img/VIN-025.jpg"}, {"n": "Pájaro Loco busto", "c": "Hanna-Barbera y clásicos", "code": "VIN-026", "img": "img/VIN-026.jpg"}, {"n": "Robin Hood", "c": "Hanna-Barbera y clásicos", "code": "VIN-027", "img": "img/VIN-027.jpg"}, {"n": "Scooby, Shaggy y Scrappy", "c": "Hanna-Barbera y clásicos", "code": "VIN-028", "img": "img/VIN-028.jpg"}, {"n": "Scooby-Doo", "c": "Hanna-Barbera y clásicos", "code": "VIN-029", "img": "img/VIN-029.jpg"}, {"n": "Snoopy tejido", "c": "Hanna-Barbera y clásicos", "code": "VIN-030", "img": "img/VIN-030.jpg"}, {"n": "Tom y Jerry", "c": "Hanna-Barbera y clásicos", "code": "VIN-031", "img": "img/VIN-031.jpg"}, {"n": "Velma con Scooby", "c": "Hanna-Barbera y clásicos", "code": "VIN-032", "img": "img/VIN-032.jpg"}, {"n": "Winnie Pooh", "c": "Hanna-Barbera y clásicos", "code": "VIN-033", "img": "img/VIN-033.jpg"}, {"n": "Battle Cat", "c": "He-Man y Thundercats", "code": "VIN-034", "img": "img/VIN-034.jpg"}, {"n": "Bustos Masters del Universo", "c": "He-Man y Thundercats", "code": "VIN-035", "img": "img/VIN-035.jpg"}, {"n": "He-Man", "c": "He-Man y Thundercats", "code": "VIN-036", "img": "img/VIN-036.jpg"}, {"n": "Lion-O busto", "c": "He-Man y Thundercats", "code": "VIN-037", "img": "img/VIN-037.jpg"}, {"n": "Mumm-Ra busto", "c": "He-Man y Thundercats", "code": "VIN-038", "img": "img/VIN-038.jpg"}, {"n": "Mumm-Ra diorama", "c": "He-Man y Thundercats", "code": "VIN-039", "img": "img/VIN-039.jpg"}, {"n": "Orko", "c": "He-Man y Thundercats", "code": "VIN-040", "img": "img/VIN-040.jpg"}, {"n": "Skeletor", "c": "He-Man y Thundercats", "code": "VIN-041", "img": "img/VIN-041.jpg"}, {"n": "Skeletor con báculo", "c": "He-Man y Thundercats", "code": "VIN-042", "img": "img/VIN-042.jpg"}, {"n": "Thundertanque", "c": "He-Man y Thundercats", "code": "VIN-043", "img": "img/VIN-043.jpg"}, {"n": "Tygra", "c": "He-Man y Thundercats", "code": "VIN-044", "img": "img/VIN-044.jpg"}, {"n": "WilyKit (Thundercats)", "c": "He-Man y Thundercats", "code": "VIN-045", "img": "img/VIN-045.jpg"}, {"n": "April O'Neil", "c": "Tortugas Ninja", "code": "VIN-046", "img": "img/VIN-046.jpg"}, {"n": "Diorama The Last Ronin", "c": "Tortugas Ninja", "code": "VIN-047", "img": "img/VIN-047.jpg"}, {"n": "Diorama Tortugas Ninja", "c": "Tortugas Ninja", "code": "VIN-048", "img": "img/VIN-048.jpg"}, {"n": "Donatello", "c": "Tortugas Ninja", "code": "VIN-049", "img": "img/VIN-049.jpg"}, {"n": "Leatherhead", "c": "Tortugas Ninja", "code": "VIN-050", "img": "img/VIN-050.jpg"}, {"n": "Leonardo", "c": "Tortugas Ninja", "code": "VIN-051", "img": "img/VIN-051.jpg"}, {"n": "Michelangelo", "c": "Tortugas Ninja", "code": "VIN-052", "img": "img/VIN-052.jpg"}, {"n": "Splinter", "c": "Tortugas Ninja", "code": "VIN-053", "img": "img/VIN-053.jpg"}, {"n": "Biker Mice en moto", "c": "Robots y acción de los 80", "code": "VIN-054", "img": "img/VIN-054.jpg"}, {"n": "Biker Mice from Mars (3 motos)", "c": "Robots y acción de los 80", "code": "VIN-055", "img": "img/VIN-055.jpg"}, {"n": "Bumblebee G1", "c": "Robots y acción de los 80", "code": "VIN-056", "img": "img/VIN-056.jpg"}, {"n": "Calabozos y Dragones: Tiamat", "c": "Robots y acción de los 80", "code": "VIN-057", "img": "img/VIN-057.jpg"}, {"n": "Demona (Gárgolas)", "c": "Robots y acción de los 80", "code": "VIN-058", "img": "img/VIN-058.jpg"}, {"n": "Gigante de Hierro", "c": "Robots y acción de los 80", "code": "VIN-059", "img": "img/VIN-059.jpg"}, {"n": "Goliath (Gárgolas)", "c": "Robots y acción de los 80", "code": "VIN-060", "img": "img/VIN-060.jpg"}, {"n": "Goliath diorama (Gárgolas)", "c": "Robots y acción de los 80", "code": "VIN-061", "img": "img/VIN-061.jpg"}, {"n": "Matriz de Liderazgo (Transformers)", "c": "Robots y acción de los 80", "code": "VIN-062", "img": "img/VIN-062.jpg"}, {"n": "Mazinger Z articulado", "c": "Robots y acción de los 80", "code": "VIN-063", "img": "img/VIN-063.jpg"}, {"n": "Megatron", "c": "Robots y acción de los 80", "code": "VIN-064", "img": "img/VIN-064.jpg"}, {"n": "Optimus Prime", "c": "Robots y acción de los 80", "code": "VIN-065", "img": "img/VIN-065.jpg"}, {"n": "Snake Eyes (G.I. Joe)", "c": "Robots y acción de los 80", "code": "VIN-066", "img": "img/VIN-066.jpg"}, {"n": "Unicron", "c": "Robots y acción de los 80", "code": "VIN-067", "img": "img/VIN-067.jpg"}, {"n": "Aaahh!!! Monstruos", "c": "Clásicos de los 90", "code": "VIN-068", "img": "img/VIN-068.jpg"}, {"n": "Arnold", "c": "Clásicos de los 90", "code": "VIN-069", "img": "img/VIN-069.jpg"}, {"n": "Bombón (Chicas Superpoderosas)", "c": "Clásicos de los 90", "code": "VIN-070", "img": "img/VIN-070.jpg"}, {"n": "Burbuja (Chicas Superpoderosas)", "c": "Clásicos de los 90", "code": "VIN-071", "img": "img/VIN-071.jpg"}, {"n": "CatDog", "c": "Clásicos de los 90", "code": "VIN-072", "img": "img/VIN-072.jpg"}, {"n": "Hombre Radioactivo (Los Simpson)", "c": "Clásicos de los 90", "code": "VIN-073", "img": "img/VIN-073.jpg"}, {"n": "Homero en el baño", "c": "Clásicos de los 90", "code": "VIN-074", "img": "img/VIN-074.jpg"}, {"n": "Moe (Los Simpson)", "c": "Clásicos de los 90", "code": "VIN-075", "img": "img/VIN-075.jpg"}, {"n": "Rocko", "c": "Clásicos de los 90", "code": "VIN-076", "img": "img/VIN-076.jpg"}, {"n": "Rugrats", "c": "Clásicos de los 90", "code": "VIN-077", "img": "img/VIN-077.jpg"}], CATS=["Looney Tunes", "Hanna-Barbera y clásicos", "He-Man y Thundercats", "Tortugas Ninja", "Robots y acción de los 80", "Clásicos de los 90"];
+let cat='Todos', q='';
+const chips=document.getElementById('chips'), qi=document.getElementById('q');
+['Todos',...CATS].forEach(c=>{const b=document.createElement('button');b.className='chip'+(c==='Todos'?' on':'');b.textContent=c;b.onclick=()=>{cat=c;[...chips.querySelectorAll('.chip')].forEach(x=>x.classList.toggle('on',x===b));render()};chips.insertBefore(b,qi)});
+qi.oninput=e=>{q=e.target.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');render()};
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function render(){
+  const L=document.getElementById('list');L.innerHTML='';let any=false;
+  CATS.forEach(c=>{
+    if(cat!=='Todos'&&cat!==c)return;
+    const its=DATA.filter(d=>d.c===c&&(!q||norm(d.n+' '+d.code+' '+d.c).includes(q)));
+    if(!its.length)return;any=true;
+    const h=document.createElement('h2');h.innerHTML=c+'<small>'+its.length+'</small>';L.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    its.forEach(d=>{const el=document.createElement('div');el.className='card';
+      el.innerHTML='<div class="ph"><img loading="lazy" alt=""></div><div class="meta"><div class="code"></div><div class="name"></div></div>';
+      el.querySelector('img').src=d.img;el.querySelector('img').alt=d.n;el.querySelector('.code').textContent=d.code;el.querySelector('.name').textContent=d.n;
+      el.onclick=()=>{document.getElementById('lbi').src=d.img;document.getElementById('lbt').textContent=d.code+' · '+d.n;document.getElementById('lb').classList.add('on')};
+      g.appendChild(el)});
+    L.appendChild(g)});
+  if(!any)L.innerHTML='<p class="empty">No encontramos ese modelo. Escríbenos y lo buscamos.</p>';
+}
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+render();
+</script>
+</body>
+</html>

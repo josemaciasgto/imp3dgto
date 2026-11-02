@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo DC Comics · Impresiones 3D GTO</title>
+<meta property="og:title" content="Catálogo DC Comics · Impresiones 3D GTO">
+<meta property="og:url" content="https://impresiones3dgto.netlify.app/dc/">
+<meta property="og:description" content="Figuras, bustos y dioramas de DC impresos en 3D. Pide el tuyo por WhatsApp.">
+<meta property="og:image" content="https://impresiones3dgto.netlify.app/img/dc.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f13;--panel:#161a21;--line:#262c36;--text:#e9ecf1;--muted:#8d96a5;--accent:#3d8bff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 24px;text-align:center;background:radial-gradient(ellipse at top,#1f2530 0%,var(--bg) 70%);border-bottom:1px solid var(--line)}
+.brand{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,8vw,76px);margin:6px 0 4px;letter-spacing:.04em;font-weight:400}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:15px;margin:0 auto;max-width:620px;line-height:1.5}
+.contact{display:inline-block;margin-top:16px;padding:9px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.bar{position:sticky;top:0;z-index:5;background:rgba(13,15,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+input{flex:1 1 180px;min-width:160px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-family:inherit;font-size:14px}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;letter-spacing:.04em;margin:32px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h2 small{font-family:Inter;font-size:13px;color:var(--muted);letter-spacing:0;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:zoom-in;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:#3a4250}
+.ph{aspect-ratio:1/1;background:#0a0b0e;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 12px}
+.code{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.name{font-size:14px;font-weight:500;margin-top:3px;line-height:1.3}
+.empty{color:var(--muted);text-align:center;padding:40px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--line);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:80vh;border-radius:8px}
+.lb p{margin:14px 0 0;font-size:16px}
+@media (max-width:600px){
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar-in::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto}
+input{flex:0 0 170px}
+h2{font-size:26px}
+.name{font-size:13px}
+header{padding:28px 16px 20px}
+}
+.contact.alt{background:var(--accent);color:#0d0f13;margin-left:8px}
+@media (max-width:600px){.contact.alt{margin:10px 0 0;display:inline-block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Impresiones 3D GTO</div>
+  <h1>Catálogo <span>DC Comics</span></h1>
+  <p class="sub">Superman, Mujer Maravilla, Flash, Linterna Verde, villanos, heroínas y dioramas del universo DC que podemos imprimir en 3D. Toca una imagen para verla grande y pídenos el modelo por su código.</p>
+  <a class="contact alt" href="../">← Todos los catálogos</a> <a class="contact" href="https://wa.me/524731399799">WhatsApp 473 139 9799</a> <a class="contact alt" href="../dragonball/">Dragon Ball →</a> <a class="contact alt" href="../batman/">Catálogo Batman →</a> <a class="contact alt" href="../marvel/">Catálogo Marvel →</a> <a class="contact alt" href="../vintage/">Caricaturas Vintage →</a>
+</header>
+<div class="bar"><div class="bar-in" id="chips"><input id="q" type="search" placeholder="Buscar (ej. Superman, Harley, busto)…"></div></div>
+<main id="list"></main>
+<footer>84 modelos · Las imágenes son de referencia del diseño digital; el acabado final depende del material, tamaño y pintura que elijas.<br>Cotiza tu figura por WhatsApp: 473 139 9799</footer>
+<div class="lb" id="lb"><img id="lbi" alt=""><p id="lbt"></p></div>
+<script>
+const DATA=[{"n": "Aquaman en el trono", "c": "Liga de la Justicia", "code": "DC-073", "img": "img/DC-073.jpg"}, {"n": "Aquaman estatua y busto", "c": "Liga de la Justicia", "code": "DC-074", "img": "img/DC-074.jpg"}, {"n": "Cyborg (Sanix)", "c": "Liga de la Justicia", "code": "DC-001", "img": "img/DC-001.jpg"}, {"n": "Detective Marciano", "c": "Liga de la Justicia", "code": "DC-002", "img": "img/DC-002.jpg"}, {"n": "Firestorm", "c": "Liga de la Justicia", "code": "DC-003", "img": "img/DC-003.jpg"}, {"n": "Flash (Eddy)", "c": "Liga de la Justicia", "code": "DC-004", "img": "img/DC-004.jpg"}, {"n": "Flash Jay Garrick", "c": "Liga de la Justicia", "code": "DC-005", "img": "img/DC-005.jpg"}, {"n": "Flecha Verde", "c": "Liga de la Justicia", "code": "DC-006", "img": "img/DC-006.jpg"}, {"n": "Hawkman", "c": "Liga de la Justicia", "code": "DC-007", "img": "img/DC-007.jpg"}, {"n": "Hawkman (3 poses)", "c": "Liga de la Justicia", "code": "DC-008", "img": "img/DC-008.jpg"}, {"n": "Hawkman (estatua)", "c": "Liga de la Justicia", "code": "DC-009", "img": "img/DC-009.jpg"}, {"n": "Linterna Verde Hal Jordan", "c": "Liga de la Justicia", "code": "DC-010", "img": "img/DC-010.jpg"}, {"n": "Linterna Verde figura articulada", "c": "Liga de la Justicia", "code": "DC-011", "img": "img/DC-011.jpg"}, {"n": "Static Shock", "c": "Liga de la Justicia", "code": "DC-012", "img": "img/DC-012.jpg"}, {"n": "Superman (Eddy)", "c": "Liga de la Justicia", "code": "DC-013", "img": "img/DC-013.jpg"}, {"n": "Superman gladiador", "c": "Liga de la Justicia", "code": "DC-014", "img": "img/DC-014.jpg"}, {"n": "Amazona", "c": "Heroínas", "code": "DC-015", "img": "img/DC-015.jpg"}, {"n": "Busto Mujer Maravilla", "c": "Heroínas", "code": "DC-016", "img": "img/DC-016.jpg"}, {"n": "Canario Negro", "c": "Heroínas", "code": "DC-017", "img": "img/DC-017.jpg"}, {"n": "Hawkgirl", "c": "Heroínas", "code": "DC-018", "img": "img/DC-018.jpg"}, {"n": "Mera", "c": "Heroínas", "code": "DC-019", "img": "img/DC-019.jpg"}, {"n": "Mujer Maravilla (Eddy)", "c": "Heroínas", "code": "DC-020", "img": "img/DC-020.jpg"}, {"n": "Mujer Maravilla Red Son", "c": "Heroínas", "code": "DC-021", "img": "img/DC-021.jpg"}, {"n": "Mujer Maravilla samurái", "c": "Heroínas", "code": "DC-022", "img": "img/DC-022.jpg"}, {"n": "Power Girl", "c": "Heroínas", "code": "DC-023", "img": "img/DC-023.jpg"}, {"n": "Power Girl (3 versiones)", "c": "Heroínas", "code": "DC-024", "img": "img/DC-024.jpg"}, {"n": "Power Girl (Nation)", "c": "Heroínas", "code": "DC-025", "img": "img/DC-025.jpg"}, {"n": "Supergirl", "c": "Heroínas", "code": "DC-026", "img": "img/DC-026.jpg"}, {"n": "Supergirl infectada", "c": "Heroínas", "code": "DC-027", "img": "img/DC-027.jpg"}, {"n": "Zatanna", "c": "Heroínas", "code": "DC-028", "img": "img/DC-028.jpg"}, {"n": "Batgirl", "c": "Familia Batman y Titanes", "code": "DC-029", "img": "img/DC-029.jpg"}, {"n": "Batwoman", "c": "Familia Batman y Titanes", "code": "DC-030", "img": "img/DC-030.jpg"}, {"n": "Cazadora (Huntress)", "c": "Familia Batman y Titanes", "code": "DC-031", "img": "img/DC-031.jpg"}, {"n": "Nightwing", "c": "Familia Batman y Titanes", "code": "DC-032", "img": "img/DC-032.jpg"}, {"n": "Raven", "c": "Familia Batman y Titanes", "code": "DC-033", "img": "img/DC-033.jpg"}, {"n": "Red Hood", "c": "Familia Batman y Titanes", "code": "DC-034", "img": "img/DC-034.jpg"}, {"n": "Robin", "c": "Familia Batman y Titanes", "code": "DC-035", "img": "img/DC-035.jpg"}, {"n": "Robin (Teen Titans)", "c": "Familia Batman y Titanes", "code": "DC-036", "img": "img/DC-036.jpg"}, {"n": "Starfire", "c": "Familia Batman y Titanes", "code": "DC-037", "img": "img/DC-037.jpg"}, {"n": "Acertijo", "c": "Villanos", "code": "DC-075", "img": "img/DC-075.jpg"}, {"n": "Acertijo en el trono", "c": "Villanos", "code": "DC-076", "img": "img/DC-076.jpg"}, {"n": "Bane", "c": "Villanos", "code": "DC-038", "img": "img/DC-038.jpg"}, {"n": "Bizarro", "c": "Villanos", "code": "DC-039", "img": "img/DC-039.jpg"}, {"n": "Black Manta", "c": "Villanos", "code": "DC-077", "img": "img/DC-077.jpg"}, {"n": "Black Manta (estatua)", "c": "Villanos", "code": "DC-078", "img": "img/DC-078.jpg"}, {"n": "Busto Darkseid (B3DSERK)", "c": "Villanos", "code": "DC-040", "img": "img/DC-040.jpg"}, {"n": "Busto Doomsday", "c": "Villanos", "code": "DC-041", "img": "img/DC-041.jpg"}, {"n": "Busto Harley Quinn", "c": "Villanos", "code": "DC-042", "img": "img/DC-042.jpg"}, {"n": "Busto Joker", "c": "Villanos", "code": "DC-043", "img": "img/DC-043.jpg"}, {"n": "Busto Joker DC", "c": "Villanos", "code": "DC-044", "img": "img/DC-044.jpg"}, {"n": "Busto Joker clásico", "c": "Villanos", "code": "DC-079", "img": "img/DC-079.jpg"}, {"n": "Busto Zoom", "c": "Villanos", "code": "DC-080", "img": "img/DC-080.jpg"}, {"n": "Darkseid en el trono", "c": "Villanos", "code": "DC-045", "img": "img/DC-045.jpg"}, {"n": "El Pingüino", "c": "Villanos", "code": "DC-046", "img": "img/DC-046.jpg"}, {"n": "Gatúbela", "c": "Villanos", "code": "DC-047", "img": "img/DC-047.jpg"}, {"n": "Gatúbela en moto", "c": "Villanos", "code": "DC-048", "img": "img/DC-048.jpg"}, {"n": "General Zod", "c": "Villanos", "code": "DC-049", "img": "img/DC-049.jpg"}, {"n": "Harley Quinn coleccionable", "c": "Villanos", "code": "DC-050", "img": "img/DC-050.jpg"}, {"n": "Harley Quinn en el trono", "c": "Villanos", "code": "DC-051", "img": "img/DC-051.jpg"}, {"n": "Hiedra Venenosa (3 poses)", "c": "Villanos", "code": "DC-052", "img": "img/DC-052.jpg"}, {"n": "Joker \"Why so serious\"", "c": "Villanos", "code": "DC-053", "img": "img/DC-053.jpg"}, {"n": "Joker cómic", "c": "Villanos", "code": "DC-054", "img": "img/DC-054.jpg"}, {"n": "Nekron", "c": "Villanos", "code": "DC-055", "img": "img/DC-055.jpg"}, {"n": "Señor Frío", "c": "Villanos", "code": "DC-056", "img": "img/DC-056.jpg"}, {"n": "Solomon Grundy", "c": "Villanos", "code": "DC-057", "img": "img/DC-057.jpg"}, {"n": "Black Adam", "c": "Antihéroes y Watchmen", "code": "DC-058", "img": "img/DC-058.jpg"}, {"n": "Deadshot (Sanix)", "c": "Antihéroes y Watchmen", "code": "DC-081", "img": "img/DC-081.jpg"}, {"n": "Deathstroke", "c": "Antihéroes y Watchmen", "code": "DC-082", "img": "img/DC-082.jpg"}, {"n": "Doctor Manhattan", "c": "Antihéroes y Watchmen", "code": "DC-059", "img": "img/DC-059.jpg"}, {"n": "Etrigan el Demonio", "c": "Antihéroes y Watchmen", "code": "DC-060", "img": "img/DC-060.jpg"}, {"n": "La Cosa del Pantano", "c": "Antihéroes y Watchmen", "code": "DC-083", "img": "img/DC-083.jpg"}, {"n": "Lobo", "c": "Antihéroes y Watchmen", "code": "DC-061", "img": "img/DC-061.jpg"}, {"n": "Silk Spectre (Watchmen)", "c": "Antihéroes y Watchmen", "code": "DC-062", "img": "img/DC-062.jpg"}, {"n": "Diorama Liga de la Justicia vs Darkseid", "c": "Dioramas y grupos", "code": "DC-063", "img": "img/DC-063.jpg"}, {"n": "Diorama Sirenas de Gotham", "c": "Dioramas y grupos", "code": "DC-064", "img": "img/DC-064.jpg"}, {"n": "Harley Quinn y el Joker", "c": "Dioramas y grupos", "code": "DC-065", "img": "img/DC-065.jpg"}, {"n": "Liga de la Justicia 6 en 1 (Sanix)", "c": "Dioramas y grupos", "code": "DC-066", "img": "img/DC-066.jpg"}, {"n": "Superman vs Zod", "c": "Dioramas y grupos", "code": "DC-067", "img": "img/DC-067.jpg"}, {"n": "Casco Flash Liga de la Justicia", "c": "Chibi, mini y cascos", "code": "DC-068", "img": "img/DC-068.jpg"}, {"n": "Linterna Verde mini", "c": "Chibi, mini y cascos", "code": "DC-069", "img": "img/DC-069.jpg"}, {"n": "Miniaturas DC: Superman", "c": "Chibi, mini y cascos", "code": "DC-070", "img": "img/DC-070.jpg"}, {"n": "Miniaturas DC: armaduras", "c": "Chibi, mini y cascos", "code": "DC-071", "img": "img/DC-071.jpg"}, {"n": "Máscara de Zoom", "c": "Chibi, mini y cascos", "code": "DC-084", "img": "img/DC-084.jpg"}, {"n": "Shazam chibi", "c": "Chibi, mini y cascos", "code": "DC-072", "img": "img/DC-072.jpg"}], CATS=["Liga de la Justicia", "Heroínas", "Familia Batman y Titanes", "Villanos", "Antihéroes y Watchmen", "Dioramas y grupos", "Chibi, mini y cascos"];
+let cat='Todos', q='';
+const chips=document.getElementById('chips'), qi=document.getElementById('q');
+['Todos',...CATS].forEach(c=>{const b=document.createElement('button');b.className='chip'+(c==='Todos'?' on':'');b.textContent=c;b.onclick=()=>{cat=c;[...chips.querySelectorAll('.chip')].forEach(x=>x.classList.toggle('on',x===b));render()};chips.insertBefore(b,qi)});
+qi.oninput=e=>{q=e.target.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');render()};
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function render(){
+  const L=document.getElementById('list');L.innerHTML='';let any=false;
+  CATS.forEach(c=>{
+    if(cat!=='Todos'&&cat!==c)return;
+    const its=DATA.filter(d=>d.c===c&&(!q||norm(d.n+' '+d.code+' '+d.c).includes(q)));
+    if(!its.length)return;any=true;
+    const h=document.createElement('h2');h.innerHTML=c+'<small>'+its.length+'</small>';L.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    its.forEach(d=>{const el=document.createElement('div');el.className='card';
+      el.innerHTML='<div class="ph"><img loading="lazy" alt=""></div><div class="meta"><div class="code"></div><div class="name"></div></div>';
+      el.querySelector('img').src=d.img;el.querySelector('img').alt=d.n;el.querySelector('.code').textContent=d.code;el.querySelector('.name').textContent=d.n;
+      el.onclick=()=>{document.getElementById('lbi').src=d.img;document.getElementById('lbt').textContent=d.code+' · '+d.n;document.getElementById('lb').classList.add('on')};
+      g.appendChild(el)});
+    L.appendChild(g)});
+  if(!any)L.innerHTML='<p class="empty">No encontramos ese modelo. Escríbenos y lo buscamos.</p>';
+}
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+render();
+</script>
+</body>
+</html>

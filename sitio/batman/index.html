@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Catálogo de figuras de Batman impresas en 3D: estatuas, bustos, villanos y dioramas. Impresiones 3D GTO, Guanajuato.">
+<meta property="og:title" content="Catálogo Batman · Impresiones 3D GTO">
+<meta property="og:url" content="https://impresiones3dgto.netlify.app/batman/">
+<meta property="og:image" content="https://impresiones3dgto.netlify.app/img/batman.jpg">
+<meta property="og:description" content="103 figuras de Batman, villanos y dioramas para imprimir en 3D. Pide tu modelo por WhatsApp.">
+<meta property="og:type" content="website">
+<title>Catálogo Batman · Impresiones 3D GTO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f13;--panel:#161a21;--line:#262c36;--text:#e9ecf1;--muted:#8d96a5;--accent:#f5c518}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 24px;text-align:center;background:radial-gradient(ellipse at top,#1f2530 0%,var(--bg) 70%);border-bottom:1px solid var(--line)}
+.brand{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,8vw,76px);margin:6px 0 4px;letter-spacing:.04em;font-weight:400}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:15px;margin:0 auto;max-width:620px;line-height:1.5}
+.contact{display:inline-block;margin-top:16px;padding:9px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.bar{position:sticky;top:0;z-index:5;background:rgba(13,15,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+input{flex:1 1 180px;min-width:160px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-family:inherit;font-size:14px}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;letter-spacing:.04em;margin:32px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h2 small{font-family:Inter;font-size:13px;color:var(--muted);letter-spacing:0;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:zoom-in;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:#3a4250}
+.ph{aspect-ratio:1/1;background:#0a0b0e;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 12px}
+.code{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.name{font-size:14px;font-weight:500;margin-top:3px;line-height:1.3}
+.empty{color:var(--muted);text-align:center;padding:40px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--line);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:80vh;border-radius:8px}
+.lb p{margin:14px 0 0;font-size:16px}
+@media (max-width:600px){
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar-in::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto}
+input{flex:0 0 170px}
+h2{font-size:26px}
+.name{font-size:13px}
+header{padding:28px 16px 20px}
+}
+.contact.alt{background:var(--accent);color:#0d0f13;margin-left:8px}
+@media (max-width:600px){.contact.alt{margin:10px 0 0;display:inline-block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Impresiones 3D GTO</div>
+  <h1>Catálogo <span>Batman</span></h1>
+  <p class="sub">Figuras, bustos, villanos, aliados y dioramas del universo de Batman que podemos imprimir en 3D. Toca una imagen para verla grande y pídenos el modelo por su código.</p>
+  <a class="contact alt" href="../">← Todos los catálogos</a> <a class="contact" href="https://wa.me/524731399799">WhatsApp 473 139 9799</a> <a class="contact alt" href="../dragonball/">Dragon Ball →</a> <a class="contact alt" href="../marvel/">Catálogo Marvel →</a> <a class="contact alt" href="../dc/">Catálogo DC →</a> <a class="contact alt" href="../vintage/">Caricaturas Vintage →</a>
+</header>
+<div class="bar"><div class="bar-in" id="chips"><input id="q" type="search" placeholder="Buscar (ej. Joker, busto, Keaton)…"></div></div>
+<main id="list"></main>
+<footer>103 modelos · Las imágenes son de referencia del diseño digital; el acabado final depende del material, tamaño y pintura que elijas.<br>Cotiza tu figura por WhatsApp: 473 139 9799</footer>
+<div class="lb" id="lb"><img id="lbi" alt=""><p id="lbt"></p></div>
+<script>
+const DATA=[{"n": "Batman (Cardoso)", "c": "Batman: estatuas y figuras", "img": "img/BAT-001.jpg", "code": "BAT-001"}, {"n": "Batman (Robert Pattinson)", "c": "Batman: estatuas y figuras", "img": "img/BAT-002.jpg", "code": "BAT-002"}, {"n": "Batman (Sanix)", "c": "Batman: estatuas y figuras", "img": "img/BAT-003.jpg", "code": "BAT-003"}, {"n": "Batman (diseño nuevo)", "c": "Batman: estatuas y figuras", "img": "img/BAT-004.jpg", "code": "BAT-004"}, {"n": "Batman 1989 (Michael Keaton)", "c": "Batman: estatuas y figuras", "img": "img/BAT-005.jpg", "code": "BAT-005"}, {"n": "Batman 3000", "c": "Batman: estatuas y figuras", "img": "img/BAT-006.jpg", "code": "BAT-006"}, {"n": "Batman Adam West", "c": "Batman: estatuas y figuras", "img": "img/BAT-007.jpg", "code": "BAT-007"}, {"n": "Batman Alex Ross", "c": "Batman: estatuas y figuras", "img": "img/BAT-008.jpg", "code": "BAT-008"}, {"n": "Batman Arkham Knight", "c": "Batman: estatuas y figuras", "img": "img/BAT-009.jpg", "code": "BAT-009"}, {"n": "Batman Ben Affleck", "c": "Batman: estatuas y figuras", "img": "img/BAT-010.jpg", "code": "BAT-010"}, {"n": "Batman Beyond", "c": "Batman: estatuas y figuras", "img": "img/BAT-011.jpg", "code": "BAT-011"}, {"n": "Batman Beyond HQ", "c": "Batman: estatuas y figuras", "img": "img/BAT-012.jpg", "code": "BAT-012"}, {"n": "Batman Dark Knight", "c": "Batman: estatuas y figuras", "img": "img/BAT-013.jpg", "code": "BAT-013"}, {"n": "Batman Dawn of Justice", "c": "Batman: estatuas y figuras", "img": "img/BAT-014.jpg", "code": "BAT-014"}, {"n": "Batman Hush", "c": "Batman: estatuas y figuras", "img": "img/BAT-015.jpg", "code": "BAT-015"}, {"n": "Batman Interrupted", "c": "Batman: estatuas y figuras", "img": "img/BAT-016.jpg", "code": "BAT-016"}, {"n": "Batman Keaton", "c": "Batman: estatuas y figuras", "img": "img/BAT-017.jpg", "code": "BAT-017"}, {"n": "Batman Keaton HQ", "c": "Batman: estatuas y figuras", "img": "img/BAT-018.jpg", "code": "BAT-018"}, {"n": "Batman Knightmare", "c": "Batman: estatuas y figuras", "img": "img/BAT-019.jpg", "code": "BAT-019"}, {"n": "Batman Last Knight", "c": "Batman: estatuas y figuras", "img": "img/BAT-020.jpg", "code": "BAT-020"}, {"n": "Batman Lord of Death", "c": "Batman: estatuas y figuras", "img": "img/BAT-021.jpg", "code": "BAT-021"}, {"n": "Batman Memorial", "c": "Batman: estatuas y figuras", "img": "img/BAT-022.jpg", "code": "BAT-022"}, {"n": "Batman Ninja", "c": "Batman: estatuas y figuras", "img": "img/BAT-023.jpg", "code": "BAT-023"}, {"n": "Batman Ninja dorado", "c": "Batman: estatuas y figuras", "img": "img/BAT-024.jpg", "code": "BAT-024"}, {"n": "Batman The Dark Knight", "c": "Batman: estatuas y figuras", "img": "img/BAT-025.jpg", "code": "BAT-025"}, {"n": "Batman The Dark Knight (piezas separadas)", "c": "Batman: estatuas y figuras", "img": "img/BAT-026.jpg", "code": "BAT-026"}, {"n": "Batman Thomas Wayne (Flashpoint)", "c": "Batman: estatuas y figuras", "img": "img/BAT-027.jpg", "code": "BAT-027"}, {"n": "Batman Venom", "c": "Batman: estatuas y figuras", "img": "img/BAT-028.jpg", "code": "BAT-028"}, {"n": "Batman a caballo", "c": "Batman: estatuas y figuras", "img": "img/BAT-029.jpg", "code": "BAT-029"}, {"n": "Batman armadura", "c": "Batman: estatuas y figuras", "img": "img/BAT-030.jpg", "code": "BAT-030"}, {"n": "Batman blindado", "c": "Batman: estatuas y figuras", "img": "img/BAT-031.jpg", "code": "BAT-031"}, {"n": "Batman clásico", "c": "Batman: estatuas y figuras", "img": "img/BAT-032.jpg", "code": "BAT-032"}, {"n": "Batman clásico (3D Figure Prints)", "c": "Batman: estatuas y figuras", "img": "img/BAT-033.jpg", "code": "BAT-033"}, {"n": "Batman con rifle", "c": "Batman: estatuas y figuras", "img": "img/BAT-034.jpg", "code": "BAT-034"}, {"n": "Batman edición exclusiva", "c": "Batman: estatuas y figuras", "img": "img/BAT-035.jpg", "code": "BAT-035"}, {"n": "Batman en acción", "c": "Batman: estatuas y figuras", "img": "img/BAT-036.jpg", "code": "BAT-036"}, {"n": "Batman en el trono", "c": "Batman: estatuas y figuras", "img": "img/BAT-037.jpg", "code": "BAT-037"}, {"n": "Batman en la azotea", "c": "Batman: estatuas y figuras", "img": "img/BAT-038.jpg", "code": "BAT-038"}, {"n": "Batman en pedestal", "c": "Batman: estatuas y figuras", "img": "img/BAT-039.jpg", "code": "BAT-039"}, {"n": "Batman escala 1/12", "c": "Batman: estatuas y figuras", "img": "img/BAT-040.jpg", "code": "BAT-040"}, {"n": "Batman estilo Frank Miller", "c": "Batman: estatuas y figuras", "img": "img/BAT-041.jpg", "code": "BAT-041"}, {"n": "Batman kit articulado", "c": "Batman: estatuas y figuras", "img": "img/BAT-042.jpg", "code": "BAT-042"}, {"n": "Batman miniaturas (3 poses)", "c": "Batman: estatuas y figuras", "img": "img/BAT-043.jpg", "code": "BAT-043"}, {"n": "Batman samurái a caballo", "c": "Batman: estatuas y figuras", "img": "img/BAT-044.jpg", "code": "BAT-044"}, {"n": "Batman sobre gárgola", "c": "Batman: estatuas y figuras", "img": "img/BAT-045.jpg", "code": "BAT-045"}, {"n": "Batman sobre gárgola II", "c": "Batman: estatuas y figuras", "img": "img/BAT-046.jpg", "code": "BAT-046"}, {"n": "Batman sobre gárgola III", "c": "Batman: estatuas y figuras", "img": "img/BAT-047.jpg", "code": "BAT-047"}, {"n": "Batman variante", "c": "Batman: estatuas y figuras", "img": "img/BAT-048.jpg", "code": "BAT-048"}, {"n": "Batman vikingo", "c": "Batman: estatuas y figuras", "img": "img/BAT-049.jpg", "code": "BAT-049"}, {"n": "Bruce Wayne (fan art)", "c": "Batman: estatuas y figuras", "img": "img/BAT-050.jpg", "code": "BAT-050"}, {"n": "Bruce Wayne: las cicatrices", "c": "Batman: estatuas y figuras", "img": "img/BAT-051.jpg", "code": "BAT-051"}, {"n": "Dark Knight (3D Figure Prints)", "c": "Batman: estatuas y figuras", "img": "img/BAT-052.jpg", "code": "BAT-052"}, {"n": "The Batman (fan art)", "c": "Batman: estatuas y figuras", "img": "img/BAT-053.jpg", "code": "BAT-053"}, {"n": "The Batman 2022", "c": "Batman: estatuas y figuras", "img": "img/BAT-054.jpg", "code": "BAT-054"}, {"n": "The Batman 2022 con bati-señal", "c": "Batman: estatuas y figuras", "img": "img/BAT-055.jpg", "code": "BAT-055"}, {"n": "The Dark Knight Returns", "c": "Batman: estatuas y figuras", "img": "img/BAT-056.jpg", "code": "BAT-056"}, {"n": "Trono de Batman", "c": "Batman: estatuas y figuras", "img": "img/BAT-057.jpg", "code": "BAT-057"}, {"n": "Batman y Gatúbela (retrato)", "c": "Bustos", "img": "img/BAT-058.jpg", "code": "BAT-058"}, {"n": "Busto Batguy", "c": "Bustos", "img": "img/BAT-059.jpg", "code": "BAT-059"}, {"n": "Busto Batman (Sanix)", "c": "Bustos", "img": "img/BAT-060.jpg", "code": "BAT-060"}, {"n": "Busto Batman Arkham Knight", "c": "Bustos", "img": "img/BAT-061.jpg", "code": "BAT-061"}, {"n": "Busto Batman Ben Affleck", "c": "Bustos", "img": "img/BAT-062.jpg", "code": "BAT-062"}, {"n": "Busto Batman The Dark Knight", "c": "Bustos", "img": "img/BAT-063.jpg", "code": "BAT-063"}, {"n": "Batman Chibi Dark Knight", "c": "Chibi y caricatura", "img": "img/BAT-064.jpg", "code": "BAT-064"}, {"n": "Batman Kids y amigos", "c": "Chibi y caricatura", "img": "img/BAT-065.jpg", "code": "BAT-065"}, {"n": "Batman estilo Funko", "c": "Chibi y caricatura", "img": "img/BAT-066.jpg", "code": "BAT-066"}, {"n": "Little Batman", "c": "Chibi y caricatura", "img": "img/BAT-067.jpg", "code": "BAT-067"}, {"n": "Bane", "c": "Villanos", "img": "img/BAT-068.jpg", "code": "BAT-068"}, {"n": "Batman que Ríe", "c": "Villanos", "img": "img/BAT-069.jpg", "code": "BAT-069"}, {"n": "Batman que Ríe (Dark Nights Metal)", "c": "Villanos", "img": "img/BAT-070.jpg", "code": "BAT-070"}, {"n": "Batman que Ríe con sus Robins", "c": "Villanos", "img": "img/BAT-071.jpg", "code": "BAT-071"}, {"n": "Batman que Ríe v1", "c": "Villanos", "img": "img/BAT-072.jpg", "code": "BAT-072"}, {"n": "Busto Batman Red Death", "c": "Villanos", "img": "img/BAT-073.jpg", "code": "BAT-073"}, {"n": "Busto Batman que Ríe", "c": "Villanos", "img": "img/BAT-074.jpg", "code": "BAT-074"}, {"n": "El Pingüino", "c": "Villanos", "img": "img/BAT-075.jpg", "code": "BAT-075"}, {"n": "Hiedra Venenosa", "c": "Villanos", "img": "img/BAT-076.jpg", "code": "BAT-076"}, {"n": "Joker Bat Slayers", "c": "Villanos", "img": "img/BAT-077.jpg", "code": "BAT-077"}, {"n": "Señor Frío", "c": "Villanos", "img": "img/BAT-078.jpg", "code": "BAT-078"}, {"n": "Batgirl Arkham Knight", "c": "Aliados", "img": "img/BAT-079.jpg", "code": "BAT-079"}, {"n": "Batman y Batgirl", "c": "Aliados", "img": "img/BAT-080.jpg", "code": "BAT-080"}, {"n": "Batman y Robin", "c": "Aliados", "img": "img/BAT-081.jpg", "code": "BAT-081"}, {"n": "Bane vs Batman Knightfall", "c": "Dioramas", "img": "img/BAT-082.jpg", "code": "BAT-082"}, {"n": "Batman Ninja vs Joker Dragón", "c": "Dioramas", "img": "img/BAT-083.jpg", "code": "BAT-083"}, {"n": "Batman sobre Joker", "c": "Dioramas", "img": "img/BAT-084.jpg", "code": "BAT-084"}, {"n": "Batman vs Guasón (3Designs)", "c": "Dioramas", "img": "img/BAT-085.jpg", "code": "BAT-085"}, {"n": "Batman vs Joker", "c": "Dioramas", "img": "img/BAT-086.jpg", "code": "BAT-086"}, {"n": "Batman vs Joker (Iron Studios)", "c": "Dioramas", "img": "img/BAT-087.jpg", "code": "BAT-087"}, {"n": "Batman y Batimóvil", "c": "Dioramas", "img": "img/BAT-088.jpg", "code": "BAT-088"}, {"n": "Batman y Gatúbela bajo el farol", "c": "Dioramas", "img": "img/BAT-089.jpg", "code": "BAT-089"}, {"n": "Batman y Robin 1966: pelea", "c": "Dioramas", "img": "img/BAT-090.jpg", "code": "BAT-090"}, {"n": "Diorama Batimóvil", "c": "Dioramas", "img": "img/BAT-091.jpg", "code": "BAT-091"}, {"n": "Diorama Batimóvil (Hex3D)", "c": "Dioramas", "img": "img/BAT-092.jpg", "code": "BAT-092"}, {"n": "Diorama Batman en Gotham", "c": "Dioramas", "img": "img/BAT-093.jpg", "code": "BAT-093"}, {"n": "Diorama Batman en Gotham (Sanix)", "c": "Dioramas", "img": "img/BAT-094.jpg", "code": "BAT-094"}, {"n": "Gotham Steampunk (villanos)", "c": "Dioramas", "img": "img/BAT-095.jpg", "code": "BAT-095"}, {"n": "Ajedrez de Batman", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-096.jpg", "code": "BAT-096"}, {"n": "Armadura Batman Beyond", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-097.jpg", "code": "BAT-097"}, {"n": "Batimóvil 1989", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-098.jpg", "code": "BAT-098"}, {"n": "Batwing 1989", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-099.jpg", "code": "BAT-099"}, {"n": "Caja de regalo Batman", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-100.jpg", "code": "BAT-100"}, {"n": "Casco Spartan Batman", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-101.jpg", "code": "BAT-101"}, {"n": "Lámpara Batman", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-102.jpg", "code": "BAT-102"}, {"n": "Portada de cómic Batman 3D", "c": "Vehículos, cascos y accesorios", "img": "img/BAT-103.jpg", "code": "BAT-103"}], CATS=["Batman: estatuas y figuras", "Bustos", "Chibi y caricatura", "Villanos", "Aliados", "Dioramas", "Vehículos, cascos y accesorios"];
+let cat='Todos', q='';
+const chips=document.getElementById('chips'), qi=document.getElementById('q');
+['Todos',...CATS].forEach(c=>{const b=document.createElement('button');b.className='chip'+(c==='Todos'?' on':'');b.textContent=c;b.onclick=()=>{cat=c;[...chips.querySelectorAll('.chip')].forEach(x=>x.classList.toggle('on',x===b));render()};chips.insertBefore(b,qi)});
+qi.oninput=e=>{q=e.target.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');render()};
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function render(){
+  const L=document.getElementById('list');L.innerHTML='';let any=false;
+  CATS.forEach(c=>{
+    if(cat!=='Todos'&&cat!==c)return;
+    const its=DATA.filter(d=>d.c===c&&(!q||norm(d.n+' '+d.code+' '+d.c).includes(q)));
+    if(!its.length)return;any=true;
+    const h=document.createElement('h2');h.innerHTML=c+'<small>'+its.length+'</small>';L.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    its.forEach(d=>{const el=document.createElement('div');el.className='card';
+      el.innerHTML='<div class="ph"><img loading="lazy" alt=""></div><div class="meta"><div class="code"></div><div class="name"></div></div>';
+      el.querySelector('img').src=d.img;el.querySelector('img').alt=d.n;el.querySelector('.code').textContent=d.code;el.querySelector('.name').textContent=d.n;
+      el.onclick=()=>{document.getElementById('lbi').src=d.img;document.getElementById('lbt').textContent=d.code+' · '+d.n;document.getElementById('lb').classList.add('on')};
+      g.appendChild(el)});
+    L.appendChild(g)});
+  if(!any)L.innerHTML='<p class="empty">No encontramos ese modelo. Escríbenos y lo buscamos.</p>';
+}
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+render();
+</script>
+</body>
+</html>

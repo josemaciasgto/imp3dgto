@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Marvel · Impresiones 3D GTO</title>
+<meta property="og:title" content="Catálogo Marvel · Impresiones 3D GTO">
+<meta property="og:url" content="https://impresiones3dgto.netlify.app/marvel/">
+<meta property="og:description" content="Figuras, bustos y dioramas de Marvel impresos en 3D. Pide el tuyo por WhatsApp.">
+<meta property="og:image" content="https://impresiones3dgto.netlify.app/img/marvel.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f13;--panel:#161a21;--line:#262c36;--text:#e9ecf1;--muted:#8d96a5;--accent:#e62429}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+header{padding:40px 20px 24px;text-align:center;background:radial-gradient(ellipse at top,#1f2530 0%,var(--bg) 70%);border-bottom:1px solid var(--line)}
+.brand{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,8vw,76px);margin:6px 0 4px;letter-spacing:.04em;font-weight:400}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:15px;margin:0 auto;max-width:620px;line-height:1.5}
+.contact{display:inline-block;margin-top:16px;padding:9px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.bar{position:sticky;top:0;z-index:5;background:rgba(13,15,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--accent);color:#111;border-color:var(--accent);font-weight:600}
+input{flex:1 1 180px;min-width:160px;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-family:inherit;font-size:14px}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;letter-spacing:.04em;margin:32px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h2 small{font-family:Inter;font-size:13px;color:var(--muted);letter-spacing:0;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:zoom-in;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:#3a4250}
+.ph{aspect-ratio:1/1;background:#0a0b0e;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 12px}
+.code{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.name{font-size:14px;font-weight:500;margin-top:3px;line-height:1.3}
+.empty{color:var(--muted);text-align:center;padding:40px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--line);line-height:1.6}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:80vh;border-radius:8px}
+.lb p{margin:14px 0 0;font-size:16px}
+@media (max-width:600px){
+.grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar-in::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto}
+input{flex:0 0 170px}
+h2{font-size:26px}
+.name{font-size:13px}
+header{padding:28px 16px 20px}
+}
+.contact.alt{background:var(--accent);color:#fff;margin-left:8px}
+@media (max-width:600px){.contact.alt{margin:10px 0 0;display:inline-block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Impresiones 3D GTO</div>
+  <h1>Catálogo <span>Marvel</span></h1>
+  <p class="sub">Spider-Man, Vengadores, X-Men, villanos y dioramas del universo Marvel que podemos imprimir en 3D. Toca una imagen para verla grande y pídenos el modelo por su código.</p>
+  <a class="contact alt" href="../">← Todos los catálogos</a> <a class="contact" href="https://wa.me/524731399799">WhatsApp 473 139 9799</a> <a class="contact alt" href="../dragonball/">Dragon Ball →</a> <a class="contact alt" href="../dc/">Catálogo DC →</a> <a class="contact alt" href="../batman/">Catálogo Batman →</a> <a class="contact alt" href="../vintage/">Caricaturas Vintage →</a>
+</header>
+<div class="bar"><div class="bar-in" id="chips"><input id="q" type="search" placeholder="Buscar (ej. Spider-Man, Wolverine, Hulk)…"></div></div>
+<main id="list"></main>
+<footer>74 modelos · Las imágenes son de referencia del diseño digital; el acabado final depende del material, tamaño y pintura que elijas.<br>Cotiza tu figura por WhatsApp: 473 139 9799</footer>
+<div class="lb" id="lb"><img id="lbi" alt=""><p id="lbt"></p></div>
+<script>
+const DATA=[{"n": "Black Cat", "c": "Spider-Man y su mundo", "code": "MV-045", "img": "img/MV-045.jpg"}, {"n": "Busto Spider-Man", "c": "Spider-Man y su mundo", "code": "MV-001", "img": "img/MV-001.jpg"}, {"n": "Gwenom", "c": "Spider-Man y su mundo", "code": "MV-002", "img": "img/MV-002.jpg"}, {"n": "Mary Jane Venom", "c": "Spider-Man y su mundo", "code": "MV-003", "img": "img/MV-003.jpg"}, {"n": "Miles Morales", "c": "Spider-Man y su mundo", "code": "MV-004", "img": "img/MV-004.jpg"}, {"n": "Spider-Gwen Ghost Spider", "c": "Spider-Man y su mundo", "code": "MV-046", "img": "img/MV-046.jpg"}, {"n": "Spider-Man Homecoming", "c": "Spider-Man y su mundo", "code": "MV-005", "img": "img/MV-005.jpg"}, {"n": "Spider-Man simbionte", "c": "Spider-Man y su mundo", "code": "MV-006", "img": "img/MV-006.jpg"}, {"n": "Spider-Man traje negro", "c": "Spider-Man y su mundo", "code": "MV-007", "img": "img/MV-007.jpg"}, {"n": "Black Panther en el trono", "c": "Vengadores", "code": "MV-008", "img": "img/MV-008.jpg"}, {"n": "Black Widow", "c": "Vengadores", "code": "MV-047", "img": "img/MV-047.jpg"}, {"n": "Black Widow (VXLabs)", "c": "Vengadores", "code": "MV-048", "img": "img/MV-048.jpg"}, {"n": "Black Widow en moto", "c": "Vengadores", "code": "MV-049", "img": "img/MV-049.jpg"}, {"n": "Busto Bruja Escarlata", "c": "Vengadores", "code": "MV-009", "img": "img/MV-009.jpg"}, {"n": "Busto Capitán América", "c": "Vengadores", "code": "MV-010", "img": "img/MV-010.jpg"}, {"n": "Busto Tony Stark", "c": "Vengadores", "code": "MV-011", "img": "img/MV-011.jpg"}, {"n": "Capitana Marvel", "c": "Vengadores", "code": "MV-050", "img": "img/MV-050.jpg"}, {"n": "Capitán América", "c": "Vengadores", "code": "MV-012", "img": "img/MV-012.jpg"}, {"n": "Guantelete del Infinito", "c": "Vengadores", "code": "MV-051", "img": "img/MV-051.jpg"}, {"n": "Hulk en el trono", "c": "Vengadores", "code": "MV-013", "img": "img/MV-013.jpg"}, {"n": "Iron Man MK3 articulado", "c": "Vengadores", "code": "MV-014", "img": "img/MV-014.jpg"}, {"n": "Iron Widow", "c": "Vengadores", "code": "MV-015", "img": "img/MV-015.jpg"}, {"n": "Mighty Thor (Jane Foster)", "c": "Vengadores", "code": "MV-016", "img": "img/MV-016.jpg"}, {"n": "She-Hulk", "c": "Vengadores", "code": "MV-052", "img": "img/MV-052.jpg"}, {"n": "Silver Surfer", "c": "Vengadores", "code": "MV-053", "img": "img/MV-053.jpg"}, {"n": "Soldado del Invierno", "c": "Vengadores", "code": "MV-054", "img": "img/MV-054.jpg"}, {"n": "Stan Lee", "c": "Vengadores", "code": "MV-055", "img": "img/MV-055.jpg"}, {"n": "Apocalipsis", "c": "X-Men", "code": "MV-056", "img": "img/MV-056.jpg"}, {"n": "Cable", "c": "X-Men", "code": "MV-017", "img": "img/MV-017.jpg"}, {"n": "Centinela (Trident)", "c": "X-Men", "code": "MV-018", "img": "img/MV-018.jpg"}, {"n": "Cíclope", "c": "X-Men", "code": "MV-019", "img": "img/MV-019.jpg"}, {"n": "Iceman", "c": "X-Men", "code": "MV-020", "img": "img/MV-020.jpg"}, {"n": "Jean Grey", "c": "X-Men", "code": "MV-021", "img": "img/MV-021.jpg"}, {"n": "Magneto", "c": "X-Men", "code": "MV-022", "img": "img/MV-022.jpg"}, {"n": "Mística", "c": "X-Men", "code": "MV-023", "img": "img/MV-023.jpg"}, {"n": "Old Man Logan", "c": "X-Men", "code": "MV-024", "img": "img/MV-024.jpg"}, {"n": "Pícara", "c": "X-Men", "code": "MV-025", "img": "img/MV-025.jpg"}, {"n": "Tormenta", "c": "X-Men", "code": "MV-026", "img": "img/MV-026.jpg"}, {"n": "Wolverine Weapon X", "c": "X-Men", "code": "MV-027", "img": "img/MV-027.jpg"}, {"n": "Wolverine en moto", "c": "X-Men", "code": "MV-028", "img": "img/MV-028.jpg"}, {"n": "Busto Loki", "c": "Villanos", "code": "MV-057", "img": "img/MV-057.jpg"}, {"n": "Busto Thanos", "c": "Villanos", "code": "MV-058", "img": "img/MV-058.jpg"}, {"n": "Iron Monger", "c": "Villanos", "code": "MV-029", "img": "img/MV-029.jpg"}, {"n": "Kingpin", "c": "Villanos", "code": "MV-059", "img": "img/MV-059.jpg"}, {"n": "Lizard", "c": "Villanos", "code": "MV-060", "img": "img/MV-060.jpg"}, {"n": "Loki", "c": "Villanos", "code": "MV-061", "img": "img/MV-061.jpg"}, {"n": "Rhino", "c": "Villanos", "code": "MV-030", "img": "img/MV-030.jpg"}, {"n": "Venom", "c": "Villanos", "code": "MV-031", "img": "img/MV-031.jpg"}, {"n": "Daredevil", "c": "Antihéroes", "code": "MV-032", "img": "img/MV-032.jpg"}, {"n": "Deadpool X-Force", "c": "Antihéroes", "code": "MV-033", "img": "img/MV-033.jpg"}, {"n": "Deadpool articulado", "c": "Antihéroes", "code": "MV-034", "img": "img/MV-034.jpg"}, {"n": "Elektra", "c": "Antihéroes", "code": "MV-062", "img": "img/MV-062.jpg"}, {"n": "Ghost Rider", "c": "Antihéroes", "code": "MV-063", "img": "img/MV-063.jpg"}, {"n": "Gwenpool", "c": "Antihéroes", "code": "MV-064", "img": "img/MV-064.jpg"}, {"n": "Moon Knight", "c": "Antihéroes", "code": "MV-035", "img": "img/MV-035.jpg"}, {"n": "Punisher (2 poses)", "c": "Antihéroes", "code": "MV-036", "img": "img/MV-036.jpg"}, {"n": "Punisher caricatura", "c": "Antihéroes", "code": "MV-037", "img": "img/MV-037.jpg"}, {"n": "Sylvie", "c": "Antihéroes", "code": "MV-065", "img": "img/MV-065.jpg"}, {"n": "Capitana Marvel vs Thanos", "c": "Dioramas y combates", "code": "MV-066", "img": "img/MV-066.jpg"}, {"n": "Darkseid vs Thanos", "c": "Dioramas y combates", "code": "MV-067", "img": "img/MV-067.jpg"}, {"n": "Diorama Doctor Octopus", "c": "Dioramas y combates", "code": "MV-038", "img": "img/MV-038.jpg"}, {"n": "Diorama Dr. Octopus e Iron Spider", "c": "Dioramas y combates", "code": "MV-039", "img": "img/MV-039.jpg"}, {"n": "Diorama Hulk Avengers", "c": "Dioramas y combates", "code": "MV-040", "img": "img/MV-040.jpg"}, {"n": "Diorama Thanos", "c": "Dioramas y combates", "code": "MV-068", "img": "img/MV-068.jpg"}, {"n": "Gambit vs Centinela", "c": "Dioramas y combates", "code": "MV-069", "img": "img/MV-069.jpg"}, {"n": "Hulk vs Hulkbuster", "c": "Dioramas y combates", "code": "MV-041", "img": "img/MV-041.jpg"}, {"n": "Hulk vs Wolverine", "c": "Dioramas y combates", "code": "MV-042", "img": "img/MV-042.jpg"}, {"n": "Juggernaut vs Red Hulk", "c": "Dioramas y combates", "code": "MV-043", "img": "img/MV-043.jpg"}, {"n": "Venom vs Spider-Man", "c": "Dioramas y combates", "code": "MV-044", "img": "img/MV-044.jpg"}, {"n": "Chibis Marvel en patineta", "c": "Chibi y caricatura", "code": "MV-070", "img": "img/MV-070.jpg"}, {"n": "Loki chibi", "c": "Chibi y caricatura", "code": "MV-071", "img": "img/MV-071.jpg"}, {"n": "Thanos chibi en el trono", "c": "Chibi y caricatura", "code": "MV-072", "img": "img/MV-072.jpg"}, {"n": "Venom chibi", "c": "Chibi y caricatura", "code": "MV-073", "img": "img/MV-073.jpg"}, {"n": "Wolverine chibi", "c": "Chibi y caricatura", "code": "MV-074", "img": "img/MV-074.jpg"}], CATS=["Spider-Man y su mundo", "Vengadores", "X-Men", "Villanos", "Antihéroes", "Dioramas y combates", "Chibi y caricatura"];
+let cat='Todos', q='';
+const chips=document.getElementById('chips'), qi=document.getElementById('q');
+['Todos',...CATS].forEach(c=>{const b=document.createElement('button');b.className='chip'+(c==='Todos'?' on':'');b.textContent=c;b.onclick=()=>{cat=c;[...chips.querySelectorAll('.chip')].forEach(x=>x.classList.toggle('on',x===b));render()};chips.insertBefore(b,qi)});
+qi.oninput=e=>{q=e.target.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');render()};
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+function render(){
+  const L=document.getElementById('list');L.innerHTML='';let any=false;
+  CATS.forEach(c=>{
+    if(cat!=='Todos'&&cat!==c)return;
+    const its=DATA.filter(d=>d.c===c&&(!q||norm(d.n+' '+d.code+' '+d.c).includes(q)));
+    if(!its.length)return;any=true;
+    const h=document.createElement('h2');h.innerHTML=c+'<small>'+its.length+'</small>';L.appendChild(h);
+    const g=document.createElement('div');g.className='grid';
+    its.forEach(d=>{const el=document.createElement('div');el.className='card';
+      el.innerHTML='<div class="ph"><img loading="lazy" alt=""></div><div class="meta"><div class="code"></div><div class="name"></div></div>';
+      el.querySelector('img').src=d.img;el.querySelector('img').alt=d.n;el.querySelector('.code').textContent=d.code;el.querySelector('.name').textContent=d.n;
+      el.onclick=()=>{document.getElementById('lbi').src=d.img;document.getElementById('lbt').textContent=d.code+' · '+d.n;document.getElementById('lb').classList.add('on')};
+      g.appendChild(el)});
+    L.appendChild(g)});
+  if(!any)L.innerHTML='<p class="empty">No encontramos ese modelo. Escríbenos y lo buscamos.</p>';
+}
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+render();
+</script>
+</body>
+</html>

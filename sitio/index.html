@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Impresiones 3D GTO · Catálogos de figuras</title>
-<meta name="description" content="Figuras impresas en 3D de Dragon Ball, Marvel, DC, Batman y caricaturas clásicas. Elige tu modelo y cotiza por WhatsApp.">
+<meta name="description" content="Figuras impresas en 3D de Dragon Ball, dragones, Marvel, DC, Batman y caricaturas clásicas. Elige tu modelo y cotiza por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://impresiones3dgto.figuras.workers.dev/">
 <meta property="og:title" content="Impresiones 3D GTO · Catálogos de figuras">
-<meta property="og:description" content="Más de 450 figuras impresas en 3D: Dragon Ball, Marvel, DC, Batman y caricaturas clásicas. Cotiza por WhatsApp.">
+<meta property="og:description" content="Más de 500 figuras impresas en 3D: Dragon Ball, dragones, Marvel, DC, Batman y caricaturas clásicas. Cotiza por WhatsApp.">
 <meta property="og:image" content="https://impresiones3dgto.figuras.workers.dev/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -30,7 +30,8 @@ h1 span{color:var(--accent)}
 @media(max-width:640px){header{background-image:url(header-m.jpg);min-height:560px}}
 main{max-width:1100px;margin:0 auto;padding:28px 16px 40px}
 h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:30px;letter-spacing:.04em;margin:8px 0 16px;text-align:center;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:960px;margin:0 auto}
+@media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 .cat{--c:#fff;position:relative;display:block;aspect-ratio:3/4;border-radius:14px;overflow:hidden;text-decoration:none;color:#fff;border:1px solid var(--line);background:#0a0b0e;transition:transform .2s,border-color .2s}
 .cat img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .cat:hover{transform:translateY(-3px);border-color:var(--c)}
@@ -64,6 +65,7 @@ footer a{color:var(--accent)}
   <h2>Elige un catálogo</h2>
   <div class="grid">
     <a class="cat" style="--c:#ff7a00" href="dragonball/"><span class="go">Ver →</span><img src="img/dragonball.jpg" alt="Dragon Ball"><div class="info"><b>Dragon Ball</b><small>118 modelos · Goku, Vegeta, Freezer, Broly</small></div></a>
+    <a class="cat" style="--c:#22c55e" href="dragones/"><span class="go">Ver →</span><img src="img/dragones.jpg" alt="Dragones"><div class="info"><b>Dragones</b><small>52 modelos · fantasía, Chimuelo, lámparas, chibis</small></div></a>
     <a class="cat" style="--c:#e62429" href="marvel/"><span class="go">Ver →</span><img src="img/marvel.jpg" alt="Marvel"><div class="info"><b>Marvel</b><small>74 modelos · Spider-Man, Hulk, Loki, X-Men</small></div></a>
     <a class="cat" style="--c:#3d8bff" href="dc/"><span class="go">Ver →</span><img src="img/dc.jpg" alt="DC Comics"><div class="info"><b>DC Comics</b><small>84 modelos · Supergirl, Harley Quinn, Liga de la Justicia</small></div></a>
     <a class="cat" style="--c:#f5c518" href="batman/"><span class="go">Ver →</span><img src="img/batman.jpg" alt="Batman"><div class="info"><b>Batman</b><small>103 modelos · Batman, Joker, villanos de Gotham</small></div></a>
